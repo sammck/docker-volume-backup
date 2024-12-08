@@ -1,0 +1,25 @@
+[project]
+name = "docker-volume-backup"
+version = "0.1.0"
+description = "API library and commandline tool for backing up named Docker volumes"
+authors = [
+    {name = "Sam McKelvie", email = "dev@mckelvie.org"},
+]
+dependencies = [
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.scripts]
+factorytown = {call = "docker_volume_backup.cli.cli:run"}
+
+[project.scripts]
+factorytown = "docker_volume_backup.cli.cli:run"
