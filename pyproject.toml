@@ -19,7 +19,7 @@ build-backend = "pdm.backend"
 distribution = true
 
 [tool.pdm.scripts]
-factorytown = {call = "docker_volume_backup.cli.cli:run"}
+dvb = {call = "docker_volume_backup.cli.cli:run"}
 
 [project.scripts]
-factorytown = "docker_volume_backup.cli.cli:run"
+dvb = "docker_volume_backup.cli.cli:run"

@@ -101,19 +101,6 @@ class CommandHandler:
                             description='Valid commands',
                             help=f'Additional help available with "{PROGNAME} <command-name> -h"')
 
-        '''
-
-        # ======================= get-md
-
-        sp = subparsers.add_parser('get-md',
-                                description='''fetch the wkitext markdown for a Factory Town wki page.''')
-        sp.add_argument("--force", "-f", action="store_true",
-                            help="Force refresh of cache")
-        sp.add_argument("page_name",
-                            help="The Wiki page name")
-        sp.set_defaults(func=self.cmd_get_md, subparser=sp)
-        '''
-
         # ======================= test
 
         sp = subparsers.add_parser('test',
