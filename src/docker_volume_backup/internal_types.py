@@ -10,11 +10,16 @@ Common type definitions meant to be imported with "import *".
 
 from __future__ import annotations
 
+try:
+    from typing import Self  # type: ignore
+except ImportError:
+    from typing_extensions import Self  # Python <=3.10
+
 from typing import (
     Dict, List, Optional, Union, Any, TypeVar, Tuple, overload,
     Callable, Iterable, Iterator, Generator, cast, TYPE_CHECKING,
     Mapping, MutableMapping, ParamSpec, Concatenate, Sequence, MutableSequence, Set, AbstractSet, MutableSet,
-    KeysView, ValuesView, ItemsView, Literal, IO, Generic, Type, Self,
+    KeysView, ValuesView, ItemsView, Literal, IO, Generic, Type,
     NamedTuple,
   )
 

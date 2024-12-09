@@ -6,8 +6,9 @@ authors = [
     {name = "Sam McKelvie", email = "dev@mckelvie.org"},
 ]
 dependencies = [
+    "typing-extensions>=4.12.2; python_version < '3.11'",
 ]
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "MIT"}
 

@@ -5,4 +5,5 @@
     "python.autoComplete.extraPaths": [
         "${workspaceFolder}/src/"
     ],
+    "python.experiments.optOutFrom": ["pythonTerminalEnvVarActivation"]
 }
